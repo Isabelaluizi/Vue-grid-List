@@ -11,22 +11,20 @@ export default {
   name: 'Button',
  data: function() {
         return {
-            button: "List"
+            button: "Card"
         }
     },
   methods: {
       changeLayoutList: function() {
           this.button = "Card";
-          console.log(this.button)
+          //console.log(this.button)
+          this.$root.$emit('changeToCard')
       },
       changeLayoutCard: function() {
           this.button = "List";
-          console.log(this.button)
+          this.$root.$emit('changeToList')
+          //console.log(this.button)
       }
-
-    //   generateQuote: function() {
-    //     this.$root.$emit('newKanyeQuote')
-    //   }
 }
 }
 </script>
