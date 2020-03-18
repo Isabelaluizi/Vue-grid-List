@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="button">
     <h4 v-if="this.button =='List'" id="list-button" @click="changeLayoutList" >List View</h4>
     <h4 v-else id="card-button" @click="changeLayoutCard" >Card View</h4>
 </div>
@@ -30,5 +30,13 @@ export default {
 </script>
 
 <style scoped>
-
+#button {
+    border: 1px solid black;
+    margin-left:40vw;
+    margin-right:40vw;
+}
+#button:hover {
+    background-color: #df6589FF;
+ 
+}
 </style>
